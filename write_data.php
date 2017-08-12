@@ -15,9 +15,9 @@ if ($conn->connect_error) {
 } 
 
 $sql = "INSERT INTO
- SAVE_DATA (Device_ID, Date_Time, Mobile_Num, Location, Temperature, Air_Humidity, Soil_Moisture, Rain, Suggest_On)
+ SAVE_DATA (Device_ID, Date_Time, Mobile_Num, Location, Temperature, Air_Humidity, Soil_Moisture, Rain)
  VALUES
- ('".$_GET["di"]."','".$date_time."','".$_GET["mn"]."','".$_GET["l"]."','".$_GET["t"]."','".$_GET["ah"]."','".$_GET["sm"]."','".$_GET["r"]."','".$_GET["so"]."')"
+ ('".$_GET["di"]."','".$date_time."','".$_GET["mn"]."','".$_GET["l"]."','".$_GET["t"]."','".$_GET["ah"]."','".$_GET["sm"]."','".$_GET["r"]."')"
  ;
 
 if ($conn->query($sql) === TRUE) {
